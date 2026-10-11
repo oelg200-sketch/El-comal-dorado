@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Comal Dorado | Pupusería</title>
+  <meta name="description" content="Pupusas hechas a mano, volteadas en comal caliente. Mira el menú con precios, los horarios y pide por WhatsApp.">
+  <meta name="theme-color" content="#F4B93A">
+  <meta property="og:title" content="El Comal Dorado | Pupusería">
+  <meta property="og:description" content="Pupusas hechas a mano con curtido y salsa roja. Menú, precios y horarios.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/slide-1.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#pupusas">Saltar al menú</a>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#inicio">El Comal Dorado</a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#pupusas">Pupusas</a>
+        <a href="#extras">Combos y bebidas</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#redes">Redes</a>
+      </nav>
+      <div class="bar-actions">
+        <button class="cart-btn" id="cartOpen" type="button" aria-label="Abrir mi pedido">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.5l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h7.6a1.5 1.5 0 0 0 1.4-1.1L20 8H6.2"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>
+          <span>Mi pedido</span>
+          <span class="badge" id="cartCount" hidden>0</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- CARRUSEL -->
+    <section class="carousel" id="carousel" aria-roledescription="carrusel" aria-label="Fotos de El Comal Dorado">
+      <div class="viewport">
+        <ul class="track" id="track">
+          <li class="slide" aria-roledescription="diapositiva" aria-label="1 de 5">
+            <img src="assets/img/slide-1.svg" alt="Tres pupusas doradas sobre el comal, con mazorcas a los lados" width="1600" height="640">
+            <div class="caption">
+              <h1>Pupusas hechas a mano</h1>
+              <p>Volteadas en comal caliente, con curtido y salsa roja.</p>
+              <a class="btn btn-primary" href="#pupusas">Ver pupusas</a>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="diapositiva" aria-label="2 de 5">
+            <img src="assets/img/slide-2.svg" alt="Frasco de curtido, tazón de salsa roja y tomates sobre la mesa" width="1600" height="640" loading="lazy">
+            <div class="caption">
+              <h2>Curtido y salsa de la casa</h2>
+              <p>Repollo fermentado y tomate asado, siempre incluidos con tu orden.</p>
+              <a class="btn btn-primary" href="#pupusas">Elegir mis pupusas</a>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="diapositiva" aria-label="3 de 5">
+            <img src="assets/img/slide-3.svg" alt="Dos vasos de horchata, una taza de café y un tamal" width="1600" height="640" loading="lazy">
+            <div class="caption">
+              <h2>Horchata y café de palo</h2>
+              <p>Para acompañar, bien fría o bien caliente.</p>
+              <a class="btn btn-primary" href="#extras">Ver bebidas</a>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="diapositiva" aria-label="4 de 5">
+            <img src="assets/img/slide-4.svg" alt="Plato con pupusas y dos tazones de curtido y salsa" width="1600" height="640" loading="lazy">
+            <div class="caption">
+              <h2>Mesa para compartir</h2>
+              <p>Pupusas surtidas para toda la familia, directo del comal.</p>
+              <a class="btn btn-primary" href="#extras">Ver combos</a>
+            </div>
+          </li>
+          <li class="slide" aria-roledescription="diapositiva" aria-label="5 de 5">
+            <img src="assets/img/slide-5.svg" alt="Bandeja con ocho pupusas alrededor de un vaso de horchata" width="1600" height="640" loading="lazy">
+            <div class="caption">
+              <h2>Combo familiar</h2>
+              <p>10 pupusas surtidas y una jarra de horchata por $14.00.</p>
+              <a class="btn btn-primary" href="#horarios">Ver horarios</a>
+            </div>
+          </li>
+        </ul>
+        <button class="nav-arrow prev" id="prev" type="button" aria-label="Diapositiva anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <button class="nav-arrow next" id="next" type="button" aria-label="Diapositiva siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <div class="dots" id="dots" role="group" aria-label="Elegir diapositiva"></div>
+      </div>
+    </section>
+
+    <!-- FRANJA DE DATOS -->
+    <section class="strip" aria-label="Datos rápidos">
+      <div class="wrap strip-grid">
+        <div class="status" id="status" role="status"><span class="dot"></span><span id="statusText">Consulta nuestro horario más abajo</span></div>
+        <ul class="perks">
+          <li>Masa de maíz molida cada tarde</li>
+          <li>Curtido y salsa roja sin costo extra</li>
+          <li>Para llevar y a domicilio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PUPUSAS (tarjetas) -->
+    <section id="pupusas">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Nuestras pupusas</h2>
+          <p>Precios en dólares. Toca “Agregar” para armar tu pedido y enviarlo por WhatsApp.</p>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Filtrar pupusas">
+          <button class="chip is-active" type="button" data-filter="todas" aria-pressed="true">Todas</button>
+          <button class="chip" type="button" data-filter="clasica" aria-pressed="false">Clásicas</button>
+          <button class="chip" type="button" data-filter="especialidad" aria-pressed="false">Especialidades</button>
+          <button class="chip" type="button" data-filter="vegetariana" aria-pressed="false">Vegetarianas</button>
+        </div>
+
+        <!--
+          Para agregar una pupusa nueva, copia una <article class="card"> completa
+          y cambia: data-id (único), data-name, data-price, data-tags, la imagen y los textos.
+        -->
+        <div class="cards" id="cards">
+          <article class="card" data-id="queso" data-name="Pupusa de queso" data-price="1.25" data-tags="clasica vegetariana">
+            <img src="assets/img/pupusa-queso.svg" alt="Pupusa de queso con un trozo de queso al lado" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Queso</h3>
+              <p>Queso fresco que se estira con cada mordida.</p>
+              <div class="card-foot"><span class="price">$1.25</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-id="frijol-queso" data-name="Pupusa de frijol con queso" data-price="1.25" data-tags="clasica vegetariana">
+            <img src="assets/img/pupusa-frijol-queso.svg" alt="Pupusa de frijol con queso, con frijoles rojos al lado" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Frijol con queso</h3>
+              <p>Frijol rojo molido y queso, la combinación de siempre.</p>
+              <div class="card-foot"><span class="price">$1.25</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-id="chicharron" data-name="Pupusa de chicharrón" data-price="1.50" data-tags="clasica">
+            <img src="assets/img/pupusa-chicharron.svg" alt="Pupusa de chicharrón con trocitos de cerdo al lado" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Chicharrón</h3>
+              <p>Cerdo molido con tomate y chile dulce, con queso.</p>
+              <div class="card-foot"><span class="price">$1.50</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-id="revuelta" data-name="Pupusa revuelta" data-price="1.50" data-tags="clasica">
+            <img src="assets/img/pupusa-revuelta.svg" alt="Pupusa revuelta con frijol, chicharrón y queso" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Revuelta</h3>
+              <p>Queso, frijol y chicharrón en una sola pupusa.</p>
+              <div class="card-foot"><span class="price">$1.50</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-id="loroco" data-name="Pupusa de queso con loroco" data-price="1.50" data-tags="clasica vegetariana">
+            <img src="assets/img/pupusa-loroco.svg" alt="Pupusa de queso con loroco y un trozo de queso" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Queso con loroco</h3>
+              <p>Flor de loroco, de sabor verde y floral, con queso.</p>
+              <div class="card-foot"><span class="price">$1.50</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-id="ayote" data-name="Pupusa de ayote con queso" data-price="1.50" data-tags="clasica vegetariana">
+            <img src="assets/img/pupusa-ayote.svg" alt="Pupusa de ayote con rodajas de ayote tierno" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Ayote con queso</h3>
+              <p>Ayote tierno sazonado con cebolla y queso.</p>
+              <div class="card-foot"><span class="price">$1.50</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card" data-id="jalapeno" data-name="Pupusa de jalapeño con queso" data-price="1.50" data-tags="clasica vegetariana">
+            <img src="assets/img/pupusa-jalapeno.svg" alt="Pupusa de jalapeño con dos chiles verdes" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Jalapeño con queso</h3>
+              <p>Para quien pide la salsa sin miedo.</p>
+              <div class="card-foot"><span class="price">$1.50</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card is-special" data-id="la-dona" data-name="La Doña" data-price="2.25" data-tags="especialidad">
+            <span class="ribbon">Especialidad</span>
+            <img src="assets/img/pupusa-la-dona.svg" alt="La Doña, pupusa revuelta con loroco y crema" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>La Doña</h3>
+              <p>Revuelta con loroco y un hilo de crema encima.</p>
+              <div class="card-foot"><span class="price">$2.25</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card is-special" data-id="camaron" data-name="Pupusa de camarón con queso" data-price="2.75" data-tags="especialidad">
+            <span class="ribbon">Especialidad</span>
+            <img src="assets/img/pupusa-camaron.svg" alt="Pupusa de camarón con queso y camarones al lado" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Camarón con queso</h3>
+              <p>Camarón salteado con ajo y chile dulce, dentro de queso fresco.</p>
+              <div class="card-foot"><span class="price">$2.75</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+
+          <article class="card is-special" data-id="arroz-loroco" data-name="Pupusa de arroz con loroco" data-price="1.75" data-tags="especialidad vegetariana">
+            <span class="ribbon">Especialidad</span>
+            <img src="assets/img/pupusa-arroz-loroco.svg" alt="Pupusa de masa de arroz con loroco y granos de arroz" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3>Arroz con loroco</h3>
+              <p>Masa de arroz más crujiente y ligera, con queso y loroco.</p>
+              <div class="card-foot"><span class="price">$1.75</span><button class="btn btn-add" type="button">Agregar</button></div>
+            </div>
+          </article>
+        </div>
+        <p class="empty" id="empty" hidden>No hay pupusas con ese filtro.</p>
+        <p class="note">Pupusa de arroz en cualquier relleno: +$0.50. Pregunta por el relleno del día.</p>
+      </div>
+    </section>
+
+    <!-- COMBOS, ANTOJITOS Y BEBIDAS -->
+    <section class="alt" id="extras">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Combos, antojitos y bebidas</h2>
+          <p>Lo que acompaña a la pupusa. Estos precios son de mostrador.</p>
+        </div>
+        <div class="lists">
+          <div class="group">
+            <h3>Combos</h3>
+            <ul class="items">
+              <li class="item"><span class="n">Combo mesa</span><span class="dots-line"></span><span class="p">$5.50</span><span class="d">3 pupusas a elegir y un vaso de horchata.</span></li>
+              <li class="item"><span class="n">Combo familiar</span><span class="dots-line"></span><span class="p">$14.00</span><span class="d">10 pupusas surtidas y una jarra de horchata.</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Antojitos</h3>
+            <ul class="items">
+              <li class="item"><span class="n">Yuca frita con chicharrón</span><span class="dots-line"></span><span class="p">$4.50</span><span class="d">Con curtido y salsa.</span></li>
+              <li class="item"><span class="n">Tamal de elote</span><span class="dots-line"></span><span class="p">$1.50</span><span class="d">Con crema fresca.</span></li>
+              <li class="item"><span class="n">Platanitos fritos</span><span class="dots-line"></span><span class="p">$3.25</span><span class="d">Con frijoles molidos y crema.</span></li>
+              <li class="item"><span class="n">Empanadas de plátano</span><span class="dots-line"></span><span class="p">$2.25</span><span class="d">Rellenas de leche, con azúcar encima.</span></li>
+              <li class="item"><span class="n">Nuégados con miel</span><span class="dots-line"></span><span class="p">$2.50</span><span class="d">Yuca frita bañada en miel de panela.</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Bebidas</h3>
+            <ul class="items">
+              <li class="item"><span class="n">Horchata de morro</span><span class="dots-line"></span><span class="p">$1.50</span><span class="d">Con canela, bien fría.</span></li>
+              <li class="item"><span class="n">Ensalada</span><span class="dots-line"></span><span class="p">$1.50</span><span class="d">Refresco de frutas picadas, piña y manzana.</span></li>
+              <li class="item"><span class="n">Tamarindo</span><span class="dots-line"></span><span class="p">$1.25</span></li>
+              <li class="item"><span class="n">Café de palo</span><span class="dots-line"></span><span class="p">$1.00</span></li>
+              <li class="item"><span class="n">Chocolate caliente</span><span class="dots-line"></span><span class="p">$1.75</span></li>
+              <li class="item"><span class="n">Gaseosa</span><span class="dots-line"></span><span class="p">$1.00</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORARIOS Y DIRECCIÓN -->
+    <section id="horarios">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Horarios y dirección</h2>
+          <p>Abrimos por la tarde, cuando el comal ya está listo. Los lunes descansamos.</p>
+        </div>
+        <div class="visit">
+          <table class="hours" aria-label="Horario de atención">
+            <tbody id="hoursBody"></tbody>
+          </table>
+          <dl class="info">
+            <div><dt>Dirección</dt><dd>Calle Las Ceibas #45, Colonia Cuscatlán<br>San Salvador, El Salvador</dd></div>
+            <div><dt>Teléfono</dt><dd class="copyrow"><span id="phone">2222-0045</span><button class="copybtn" id="copyPhone" type="button">Copiar</button></dd></div>
+            <div><dt>Servicio</dt><dd>Mesas en el corredor, para llevar y entrega a domicilio en la colonia.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA Y REDES -->
+  <footer id="redes">
+    <div class="wrap">
+      <h2>Síguenos y pide por mensaje</h2>
+      <p class="sub">Publicamos el relleno del día, los combos de fin de semana y cuándo sale la horchata nueva.</p>
+      <div class="social">
+        <a class="soc" href="https://www.facebook.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h2.5V5H14c-2.2 0-3.5 1.5-3.5 3.6V11H8v3h2.5v7h3v-7H16l.5-3h-3V8.8c0-.5.2-.8.5-.8z"/></svg>
+          Facebook <small>/elcomaldorado</small>
+        </a>
+        <a class="soc" href="https://www.instagram.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>
+          Instagram <small>@elcomaldorado</small>
+        </a>
+        <a class="soc" href="https://www.tiktok.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 3v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14.5 3c.3 2.4 1.8 4 4.2 4.3"/></svg>
+          TikTok <small>@elcomaldorado</small>
+        </a>
+        <a class="soc" id="waLink" href="https://wa.me/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor" stroke="none"/></svg>
+          WhatsApp <small>Pedidos</small>
+        </a>
+      </div>
+      <div class="fine">
+        <span>© <span id="year">2026</span> El Comal Dorado · Pupusería de ejemplo</span>
+        <span>Sitio de demostración. Nombre, dirección y teléfono no son reales.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PEDIDO (panel lateral) -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Mi pedido" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Mi pedido</h2>
+      <button class="icon-btn" id="cartClose" type="button" aria-label="Cerrar pedido">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <ul class="lines" id="lines"></ul>
+    <p class="drawer-empty" id="drawerEmpty">Todavía no agregaste nada. Elige tus pupusas y aparecerán aquí.</p>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="total">$0.00</strong></div>
+      <a class="btn btn-primary btn-block" id="sendWa" href="https://wa.me/" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
+      <button class="btn btn-ghost btn-block" id="clearCart" type="button">Vaciar pedido</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
