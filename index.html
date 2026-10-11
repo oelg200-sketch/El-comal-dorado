@@ -10,11 +10,12 @@
   <meta property="og:description" content="Pupusas hechas a mano con curtido y salsa roja. Menú, precios y horarios.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/img/slide-1.svg">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <!-- Ícono de la pestaña: va dentro del propio HTML, no depende de ningún archivo -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F4B93A'/%3E%3Cellipse cx='32' cy='36' rx='24' ry='14' fill='%23D9AE55'/%3E%3Cellipse cx='32' cy='31' rx='24' ry='14' fill='%23F2D083'/%3E%3Cellipse cx='24' cy='29' rx='6' ry='3' fill='%23B8741F'/%3E%3Cellipse cx='38' cy='33' rx='7' ry='3' fill='%23B8741F'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Figtree:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#pupusas">Saltar al menú</a>
@@ -48,7 +49,7 @@
       <div class="viewport">
         <ul class="track" id="track">
           <li class="slide" aria-roledescription="diapositiva" aria-label="1 de 5">
-            <img src="assets/img/slide-1.svg" alt="Tres pupusas doradas sobre el comal, con mazorcas a los lados" width="1600" height="640">
+            <img src="assets/slide-1.svg" alt="Tres pupusas doradas sobre el comal, con mazorcas a los lados" width="1600" height="640">
             <div class="caption">
               <h1>Pupusas hechas a mano</h1>
               <p>Volteadas en comal caliente, con curtido y salsa roja.</p>
@@ -56,7 +57,7 @@
             </div>
           </li>
           <li class="slide" aria-roledescription="diapositiva" aria-label="2 de 5">
-            <img src="assets/img/slide-2.svg" alt="Frasco de curtido, tazón de salsa roja y tomates sobre la mesa" width="1600" height="640" loading="lazy">
+            <img src="assets/slide-2.svg" alt="Frasco de curtido, tazón de salsa roja y tomates sobre la mesa" width="1600" height="640" loading="lazy">
             <div class="caption">
               <h2>Curtido y salsa de la casa</h2>
               <p>Repollo fermentado y tomate asado, siempre incluidos con tu orden.</p>
@@ -64,7 +65,7 @@
             </div>
           </li>
           <li class="slide" aria-roledescription="diapositiva" aria-label="3 de 5">
-            <img src="assets/img/slide-3.svg" alt="Dos vasos de horchata, una taza de café y un tamal" width="1600" height="640" loading="lazy">
+            <img src="assets/slide-3.svg" alt="Dos vasos de horchata, una taza de café y un tamal" width="1600" height="640" loading="lazy">
             <div class="caption">
               <h2>Horchata y café de palo</h2>
               <p>Para acompañar, bien fría o bien caliente.</p>
@@ -72,7 +73,7 @@
             </div>
           </li>
           <li class="slide" aria-roledescription="diapositiva" aria-label="4 de 5">
-            <img src="assets/img/slide-4.svg" alt="Plato con pupusas y dos tazones de curtido y salsa" width="1600" height="640" loading="lazy">
+            <img src="assets/slide-4.svg" alt="Plato con pupusas y dos tazones de curtido y salsa" width="1600" height="640" loading="lazy">
             <div class="caption">
               <h2>Mesa para compartir</h2>
               <p>Pupusas surtidas para toda la familia, directo del comal.</p>
@@ -80,7 +81,7 @@
             </div>
           </li>
           <li class="slide" aria-roledescription="diapositiva" aria-label="5 de 5">
-            <img src="assets/img/slide-5.svg" alt="Bandeja con ocho pupusas alrededor de un vaso de horchata" width="1600" height="640" loading="lazy">
+            <img src="assets/slide-5.svg" alt="Bandeja con ocho pupusas alrededor de un vaso de horchata" width="1600" height="640" loading="lazy">
             <div class="caption">
               <h2>Combo familiar</h2>
               <p>10 pupusas surtidas y una jarra de horchata por $14.00.</p>
@@ -131,7 +132,7 @@
         -->
         <div class="cards" id="cards">
           <article class="card" data-id="queso" data-name="Pupusa de queso" data-price="1.25" data-tags="clasica vegetariana">
-            <img src="assets/img/pupusa-queso.svg" alt="Pupusa de queso con un trozo de queso al lado" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-queso.svg" alt="Pupusa de queso con un trozo de queso al lado" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Queso</h3>
               <p>Queso fresco que se estira con cada mordida.</p>
@@ -140,7 +141,7 @@
           </article>
 
           <article class="card" data-id="frijol-queso" data-name="Pupusa de frijol con queso" data-price="1.25" data-tags="clasica vegetariana">
-            <img src="assets/img/pupusa-frijol-queso.svg" alt="Pupusa de frijol con queso, con frijoles rojos al lado" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-frijol-queso.svg" alt="Pupusa de frijol con queso, con frijoles rojos al lado" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Frijol con queso</h3>
               <p>Frijol rojo molido y queso, la combinación de siempre.</p>
@@ -149,7 +150,7 @@
           </article>
 
           <article class="card" data-id="chicharron" data-name="Pupusa de chicharrón" data-price="1.50" data-tags="clasica">
-            <img src="assets/img/pupusa-chicharron.svg" alt="Pupusa de chicharrón con trocitos de cerdo al lado" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-chicharron.svg" alt="Pupusa de chicharrón con trocitos de cerdo al lado" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Chicharrón</h3>
               <p>Cerdo molido con tomate y chile dulce, con queso.</p>
@@ -158,7 +159,7 @@
           </article>
 
           <article class="card" data-id="revuelta" data-name="Pupusa revuelta" data-price="1.50" data-tags="clasica">
-            <img src="assets/img/pupusa-revuelta.svg" alt="Pupusa revuelta con frijol, chicharrón y queso" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-revuelta.svg" alt="Pupusa revuelta con frijol, chicharrón y queso" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Revuelta</h3>
               <p>Queso, frijol y chicharrón en una sola pupusa.</p>
@@ -167,7 +168,7 @@
           </article>
 
           <article class="card" data-id="loroco" data-name="Pupusa de queso con loroco" data-price="1.50" data-tags="clasica vegetariana">
-            <img src="assets/img/pupusa-loroco.svg" alt="Pupusa de queso con loroco y un trozo de queso" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-loroco.svg" alt="Pupusa de queso con loroco y un trozo de queso" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Queso con loroco</h3>
               <p>Flor de loroco, de sabor verde y floral, con queso.</p>
@@ -176,7 +177,7 @@
           </article>
 
           <article class="card" data-id="ayote" data-name="Pupusa de ayote con queso" data-price="1.50" data-tags="clasica vegetariana">
-            <img src="assets/img/pupusa-ayote.svg" alt="Pupusa de ayote con rodajas de ayote tierno" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-ayote.svg" alt="Pupusa de ayote con rodajas de ayote tierno" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Ayote con queso</h3>
               <p>Ayote tierno sazonado con cebolla y queso.</p>
@@ -185,7 +186,7 @@
           </article>
 
           <article class="card" data-id="jalapeno" data-name="Pupusa de jalapeño con queso" data-price="1.50" data-tags="clasica vegetariana">
-            <img src="assets/img/pupusa-jalapeno.svg" alt="Pupusa de jalapeño con dos chiles verdes" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-jalapeno.svg" alt="Pupusa de jalapeño con dos chiles verdes" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Jalapeño con queso</h3>
               <p>Para quien pide la salsa sin miedo.</p>
@@ -195,7 +196,7 @@
 
           <article class="card is-special" data-id="la-dona" data-name="La Doña" data-price="2.25" data-tags="especialidad">
             <span class="ribbon">Especialidad</span>
-            <img src="assets/img/pupusa-la-dona.svg" alt="La Doña, pupusa revuelta con loroco y crema" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-la-dona.svg" alt="La Doña, pupusa revuelta con loroco y crema" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>La Doña</h3>
               <p>Revuelta con loroco y un hilo de crema encima.</p>
@@ -205,7 +206,7 @@
 
           <article class="card is-special" data-id="camaron" data-name="Pupusa de camarón con queso" data-price="2.75" data-tags="especialidad">
             <span class="ribbon">Especialidad</span>
-            <img src="assets/img/pupusa-camaron.svg" alt="Pupusa de camarón con queso y camarones al lado" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-camaron.svg" alt="Pupusa de camarón con queso y camarones al lado" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Camarón con queso</h3>
               <p>Camarón salteado con ajo y chile dulce, dentro de queso fresco.</p>
@@ -215,7 +216,7 @@
 
           <article class="card is-special" data-id="arroz-loroco" data-name="Pupusa de arroz con loroco" data-price="1.75" data-tags="especialidad vegetariana">
             <span class="ribbon">Especialidad</span>
-            <img src="assets/img/pupusa-arroz-loroco.svg" alt="Pupusa de masa de arroz con loroco y granos de arroz" width="400" height="300" loading="lazy">
+            <img src="assets/pupusa-arroz-loroco.svg" alt="Pupusa de masa de arroz con loroco y granos de arroz" width="400" height="300" loading="lazy">
             <div class="card-body">
               <h3>Arroz con loroco</h3>
               <p>Masa de arroz más crujiente y ligera, con queso y loroco.</p>
@@ -338,6 +339,6 @@
   </aside>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
